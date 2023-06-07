@@ -50,11 +50,12 @@ millenniumFalcon = Nave {
     nombre = "Millennium Falcon",
     durabilidad = 1000,
     escudo = 500,
-    ataque = 50,
+    ataque = 60,
     poder = modificarEscudo 100 . reparacionDeEmergencia
 }
 
-{-- Abstraccion mayor 
+{-- 
+Abstraccion mayor 
 modificarNave :: (Int -> Nave) -> Int -> Nave -> Nave
 modificarNave campo valor nave =  
 --}
